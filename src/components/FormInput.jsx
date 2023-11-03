@@ -64,7 +64,7 @@ const [age,setAge]=useState();
                             </div>
                         </div>
                     </div>
-                    <TableComponent/>
+                    {/* <TableComponent/> */}
                 </div>
             </div>
         </div>
