@@ -1,25 +1,5 @@
 import React, { useState } from 'react'
-import { api } from '../api/api';
-import TableComponent from './TableComponent';
-
 function FormInput() {
-const [name,setName]=useState([]);
-const [gender,setGender]=useState();
-const [age,setAge]=useState();
-// const postData=()=>{
-//     api.post("person",{
-//         'name':name,
-//         'gender':gender,
-//         'age':age
-//     }).then(response => {
-//         console.log('Data inserted successfully:', response.data);
-//       })
-//       .catch(error => {
-//         console.error('Error inserting data:', error);
-//       })
-// }
-
-  //console.log(gender,age,name);
     return (
         <div>
             <div class=" bg-gray-100 flex items-center justify-center">
@@ -39,23 +19,23 @@ const [age,setAge]=useState();
                                     <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
                                         <div class="md:col-span-5">
                                             <label for="full_name">Full Name</label>
-                                            <input type="text" name="name" id="full_name" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"  onChange={(e)=>setName(e.target.value)}/>
+                                            <input type="text" name="name" id="full_name" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"  />
                                         </div>
 
                                         <div class="md:col-span-5">
                                             <label for="email">Gender</label>
-                                            <input type="text" name="gender" id="email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" onChange={(e)=>setGender(e.target.value)} />
+                                            <input type="text" name="gender" id="email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"  />
                                         </div>
 
                                         <div class="md:col-span-5">
                                             <label for="email">Age</label>
-                                            <input type="text" name="gender" id="email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"  onChange={(e)=>setAge(e.target.value)}/>
+                                            <input type="text" name="gender" id="email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" />
                                         </div>
 
 
                                         <div class="md:col-span-5 text-right">
                                             <div class="inline-flex items-end">
-                                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={()=>postData()}>Submit</button>
+                                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Submit</button>
                                             </div>
                                         </div>
 
@@ -64,7 +44,6 @@ const [age,setAge]=useState();
                             </div>
                         </div>
                     </div>
-                    {/* <TableComponent/> */}
                 </div>
             </div>
         </div>
