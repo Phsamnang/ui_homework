@@ -6,18 +6,18 @@ function FormInput() {
 const [name,setName]=useState([]);
 const [gender,setGender]=useState();
 const [age,setAge]=useState();
-const postData=()=>{
-    api.post("person",{
-        'name':name,
-        'gender':gender,
-        'age':age
-    }).then(response => {
-        console.log('Data inserted successfully:', response.data);
-      })
-      .catch(error => {
-        console.error('Error inserting data:', error);
-      })
-}
+// const postData=()=>{
+//     api.post("person",{
+//         'name':name,
+//         'gender':gender,
+//         'age':age
+//     }).then(response => {
+//         console.log('Data inserted successfully:', response.data);
+//       })
+//       .catch(error => {
+//         console.error('Error inserting data:', error);
+//       })
+// }
 
   //console.log(gender,age,name);
     return (
