@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { api } from '../api/api';
 export default function TableComponent() {
     const [data, setData] = useState([]);
-    const fetchData=()=>{
-        api.get("person")
-        .then(response => {
-          setData(response.data);
-        })
-        .catch(error => {
-         // console.error('Error fetching data:', error);
-        });
-    }
+    // const fetchData=()=>{
+    //     api.get("person")
+    //     .then(response => {
+    //       setData(response.data);
+    //     })
+    //     .catch(error => {
+    //      // console.error('Error fetching data:', error);
+    //     });
+    // }
   useEffect(() => {
      const interval=setInterval(fetchData,5000);
      return ()=>{
